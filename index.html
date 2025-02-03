@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="script/bootstrap-3.4.1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="script/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="script/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="script/bootstrap-3.4.1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/style.scss">
     
@@ -13,6 +13,78 @@
 </head>
 <body>
     <div class="container">
+        <nav class="navbarr navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-menu" aria-expanded="false">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <img src="assets/image/logo.png" alt="logo" class="logo">
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar-menu">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="nav_item"><a href="#">Про нас</a></li>
+                        <li class=" nav_item dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                Курси
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <div class="menu">
+                                    <div class="dropdown__menu__item">
+                                        <li><a href="#">Інвестування</a></li>
+                                        <li><a href="#">Економіка професії. Як бути успішним</a></li>
+                                        <li><a href="#">Житлова нерухомість</a></li>
+                                        <li><a href="#">Земля</a></li>
+                                    </div>
+                                    <div class="dropdown__menu__item">
+                                        <li><a href="#">Інвестування</a></li>
+                                        <li><a href="#">Економіка професії. Як бути успішним</a></li>
+                                        <li><a href="#">Житлова нерухомість</a></li>
+                                        <li><a href="#">Земля</a></li>
+                                    </div>
+                                    <div class="dropdown__menu__item">
+                                        <li><a href="#">Інвестування</a></li>
+                                        <li><a href="#">Економіка професії. Як бути успішним</a></li>
+                                        <li><a href="#">Житлова нерухомість</a></li>
+                                        <li><a href="#">Земля</a></li>
+                                    </div>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="nav_item"><a href="#">Контакти</a></li>
+                        <li class="nav_item"><a href="#">Блог</a></li>
+                        <li class="nav_item"><a href="#">Спікери</a></li>
+                        <li class=" nav_item soc_container">
+                            <span class="soc_item">
+                                <a href="#" class="soc_link">
+                                    <img src="assets/Icons/icon-1.png" alt="" class="img">
+                                </a>
+                            </span>
+                            <span class="soc_item">
+                                <a href="#" class="soc_link">
+                                    <img src="assets/Icons/icon-2.png" alt="" class="img">
+                                </a>
+                            </span>  
+                            <span class="soc_item">
+                                <a href="#" class="soc_link">
+                                    <img src="assets/Icons/icon-3.png" alt="" class="img">
+                                </a>
+                            </span>  
+                            <span class="soc_item">
+                                <a href="#" class="soc_link">
+                                    <img src="assets/Icons/icon-4.png" alt="" class="img">
+                                </a>
+                            </span>  
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            </nav>
         
         <div class="container__main">
        
@@ -206,7 +278,7 @@ RIM hub пропонує унікальний навчальний продук�
                                         Лідерство -необхідна компетенція в ріелтоській справі. Необхідна, керівнику агенції, і звичайному ріелтеру. Люди ідуть за тим, хто проявляє лідерство впевнено, сильно і естетично. Про те, як впливати на цей світ красиво -семінар Ірини Кіркіної.
                                     </p>
                                     <div class="rating__relative">
-                                        <div class="half-stars">
+                                        <div class="half-stars"><div class="reting__none"></div>
                                             <div class="rating-group">
                                                 <!-- по умолчанию 0 -->
                                                 <input disabled checked name="hsr-3" value="0" type="radio">
@@ -315,7 +387,7 @@ RIM hub пропонує унікальний навчальний продук�
                                         Лідерство -необхідна компетенція в ріелтоській справі. Необхідна, керівнику агенції, і звичайному ріелтеру. Люди ідуть за тим, хто проявляє лідерство впевнено, сильно і естетично. Про те, як впливати на цей світ красиво -семінар Ірини Кіркіної.
                                     </p>
                                     <div class="rating__relative">
-                                        <div class="half-stars">
+                                        <div class="half-stars"> <div class="reting__none"></div>
                                             <div class="rating-group">
                                                 <!-- по умолчанию 0 -->
                                                 <input disabled checked name="hsr-4" value="0" type="radio">
@@ -585,27 +657,46 @@ RIM hub пропонує унікальний навчальний продук�
     </div>
     
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="script/bootstrap-3.4.1-dist/js/bootstrap.min.js" ></script>
     <script type="text/javascript" src="script/slick/slick.min.js"></script>
     
     <script>
+        //центрирования дроп меню хедер
+        $(document).ready(function() {
+            function centerDropdownMenu() {
+                var dropdown = $('.dropdown');
+                var dropdownMenu = dropdown.find('.dropdown-menu');
+                var dropdownWidth = dropdown.outerWidth();
+                var menuWidth = dropdownMenu.outerWidth();
+                var offset = (dropdownWidth - menuWidth) / 2;
+                dropdownMenu.css({
+                    'left': offset + 'px',
+                    'right': 'auto'
+                });
+            }
+            centerDropdownMenu();
+            $('.dropdown-toggle').click(function() {
+                centerDropdownMenu();
+            });
+            $('.dropdown').hover(function() {
+                centerDropdownMenu();
+            });
+        });
 
 $(document).ready(function() {
-    // Устанавливаем рейтинг по умолчанию для каждой карточки
+    // Устанавливаем рейтинг
     var defaultRating = 3.5;
 
-    // Функция для обновления рейтинга на клиенте
     function updateRating(itemId, rating) {
-        // Используем уникальные id для каждого элемента
+
         var prefix = '#hsr-' + itemId + '-';
 
-        // Деактивируем все radio-кнопки для данной карточки (чтобы пользователь не мог менять рейтинг)
+       
         $('input[name="hsr_' + itemId + '"]').prop('disabled', true);
 
-        // Для исключения (например, special-item), не будем выделять звезды
         if (itemId !== 'special-item') {
-            // Устанавливаем нужный checked input в зависимости от рейтинга
+            
             if (rating <= 0.5) {
                 $(prefix + '05').prop('checked', true);
             } else if (rating <= 1) {
@@ -628,11 +719,11 @@ $(document).ready(function() {
                 $(prefix + '50').prop('checked', true);
             }
         }
-        // Если это исключение, то только ставим рейтинг, но не выделяем звезды.
+        
         else {
             // Для специального элемента только устанавливаем нужный рейтинг без выделения
             if (rating <= 0.5) {
-                $(prefix + '05').prop('checked', false);  // Не выделяем звезды
+                $(prefix + '05').prop('checked', false);  
             } else if (rating <= 1) {
                 $(prefix + '10').prop('checked', false);
             } else if (rating <= 1.5) {
@@ -655,20 +746,20 @@ $(document).ready(function() {
         }
     }
 
-    // Устанавливаем рейтинг по умолчанию для всех карточек
+   
     $('[data-item-id]').each(function() {
         var itemId = $(this).data('item-id');
-        updateRating(itemId, defaultRating); // Устанавливаем рейтинг 3.5
+        updateRating(itemId, defaultRating); 
     });
 
-    // Функция для получения рейтинга с сервера для каждого элемента (пример)
+    
     function fetchRating(itemId) {
         $.ajax({
             url: '/get-rating',
             method: 'GET',
-            data: { item_id: itemId }, // Параметр для получения рейтинга по itemId
+            data: { item_id: itemId }, 
             success: function(data) {
-                var rating = data.rating || defaultRating; // Если данных нет, ставим 3.5
+                var rating = data.rating || defaultRating; 
                 updateRating(itemId, rating);
             },
             error: function() {
