@@ -286,6 +286,12 @@ p,a {
     }
 }
 
+@media (max-width: 450px) {
+    .main__navigation {
+        margin: 90px 0 0 15px;
+    }
+}
+
 .main__title {
     display: flex;
     align-items: center;
